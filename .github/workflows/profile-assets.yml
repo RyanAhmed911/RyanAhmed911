@@ -1,9 +1,11 @@
+# Save as: .github/workflows/profile-assets.yml  (in the RyanAhmed911/RyanAhmed911 repo)
+
 name: Update profile assets
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  
-  workflow_dispatch:          
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -24,11 +26,10 @@ jobs:
 
       - name: Seed dist with last known-good assets
         run: |
-          mkdir -p dist
+          mkdir -p dist tmp
           if [ -d prev ]; then
             find prev -maxdepth 1 -name '*.svg' -exec cp {} dist/ \; || true
           fi
-          ls -la dist || true
 
       - name: Generate snake animation
         continue-on-error: true
@@ -43,21 +44,22 @@ jobs:
         env:
           USER: ${{ github.repository_owner }}
         run: |
-          mkdir -p tmp
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 
-          # fetch <name> <url> — writes dist/<name>.svg only on success
           fetch () {
             name="$1"; url="$2"
-            if curl -fsSL --retry 4 --retry-all-errors --retry-delay 5 \
-                    --max-time 45 -o "tmp/$name.svg" "$url"; then
-              if [ -s "tmp/$name.svg" ]; then
-                mv "tmp/$name.svg" "dist/$name.svg"
-                echo "::notice::$name refreshed"
-                return 0
-              fi
+            code=$(curl -sSL -w '%{http_code}' -o "tmp/$name.svg" \
+                     -A "$UA" -H 'Accept: image/svg+xml,image/*,*/*' \
+                     --retry 4 --retry-all-errors --retry-delay 8 --max-time 60 \
+                     "$url" || echo 000)
+            if [ "$code" = "200" ] && [ -s "tmp/$name.svg" ] \
+               && head -c 400 "tmp/$name.svg" | grep -qi '<svg'; then
+              mv "tmp/$name.svg" "dist/$name.svg"
+              echo "::notice::$name refreshed"
+              return 0
             fi
-            echo "::warning::$name failed to refresh — keeping previous copy"
-            echo "::warning::  url was $url"
+            echo "::warning::$name failed (HTTP $code) — keeping previous copy"
+            head -c 200 "tmp/$name.svg" 2>/dev/null || true
             return 1
           }
 
@@ -82,15 +84,21 @@ jobs:
           echo "--- assets to publish ---"
           ls -la dist
 
-          if [ -z "$(ls -A dist/*.svg 2>/dev/null)" ]; then
-            echo "::error::No assets were produced at all — nothing to publish."
+          if ! ls dist/*.svg >/dev/null 2>&1; then
+            echo "::error::No assets were produced at all."
             exit 1
           fi
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Publish to output branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          rm -rf .git
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Update profile assets [skip ci]"
+          git push -q --force \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
