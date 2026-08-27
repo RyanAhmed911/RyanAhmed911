@@ -15,7 +15,7 @@
 
 ### 🚀 About
 
-I'm a **Computer Science undergraduate at BRAC University**, based in Dhaka, Bangladesh. I work at the intersection of **machine learning** and **full-stack development**, and I like building things that solve a real problems. When I'm not training a model, I'm probably arguing with a microcontroller that refuses to follow a line.
+I'm a **Computer Science undergraduate at BRAC University**, based in Dhaka, Bangladesh. I work at the intersection of **machine learning** and **full-stack development**, and I like building things that solve real problems. When I'm not training a model, I'm probably arguing with a microcontroller that refuses to follow a line.
 
 ---
 
@@ -25,15 +25,15 @@ I'm a **Computer Science undergraduate at BRAC University**, based in Dhaka, Ban
   <img src="https://skillicons.dev/icons?i=py,c,java,js,react,nodejs,express,mongodb,mysql,postgres,pytorch,tensorflow,sklearn,git,arduino&theme=dark&perline=8" alt="Tech stack" />
 </div>
 
+**Languages** &nbsp;C · Python · JavaScript · Java · SQL · Assembly
 
-**Languages** C · Python · JavaScript · Java · SQL · Assembly
+**Web** &nbsp;React.js · Node.js · Express.js · MongoDB · HTML5 · CSS3
 
-**Web** React.js · Node.js · Express.js · MongoDB · HTML5 · CSS3
+**ML & AI** &nbsp;PyTorch · TensorFlow · Scikit-learn · Keras · NumPy · Pandas · Matplotlib
 
-**ML & AI** PyTorch · TensorFlow · Scikit-learn · Keras · NumPy · Pandas · Matplotlib
+**Databases** &nbsp;MySQL · PostgreSQL · MongoDB
 
-**Databases** MySQL · PostgreSQL · MongoDB
-**Tools** Git · GitHub · VS Code · Arduino IDE
+**Tools** &nbsp;Git · GitHub · VS Code · Arduino IDE
 
 ---
 
@@ -41,21 +41,8 @@ I'm a **Computer Science undergraduate at BRAC University**, based in Dhaka, Ban
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=RyanAhmed911&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RyanAhmed911&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" alt="Top languages" />
+<img src="https://raw.githubusercontent.com/RyanAhmed911/RyanAhmed911/output/streak.svg" alt="Streak stats" />
 
-<img src="https://streak-stats.demolab.com?user=RyanAhmed911&hide_border=true&theme=tokyonight" alt="Streak stats" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=RyanAhmed911&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
-
-</div>
-
----
-
-### 📈 Contribution graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RyanAhmed911&theme=tokyo-night&hide_border=true&area=true" alt="Activity graph" />
 </div>
 
 ---
