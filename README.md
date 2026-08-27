@@ -1,14 +1,17 @@
 <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF005D&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Ryan+Ahmed;Currently+obsessed+with+NLP;I+love+Robotics+too;Always+creating+something." alt="Typing SVG" />
-
-<img src="https://komarev.com/ghpvc/?username=RyanAhmed911&label=Profile%20views&color=FF005D&style=flat-square" alt="Profile views" />
-<a href="https://github.com/RyanAhmed911?tab=followers"><img src="https://img.shields.io/github/followers/RyanAhmed911?label=Followers&style=flat-square&color=FF005D" alt="Followers" /></a>
-
-<a href="https://linkedin.com/in/ryan-ahmed-749067201/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:ryanahmed9110@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://github.com/RyanAhmed911"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-
+  <p>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF005D&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Ryan+Ahmed;Currently+obsessed+with+NLP;I+love+Robotics+too;Always+creating+something." alt="Typing SVG" />
+  </p>
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=RyanAhmed911&label=Profile%20views&color=FF005D&style=flat-square" alt="Profile views" />
+    <a href="https://github.com/RyanAhmed911?tab=followers"><img src="https://img.shields.io/github/followers/RyanAhmed911?label=Followers&style=flat-square&color=FF005D" alt="Followers" /></a>
+  </p>
+  <p>
+    <a href="https://linkedin.com/in/ryan-ahmed-749067201/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="mailto:ryanahmed9110@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+    <a href="https://www.youtube.com/@RyanAhmed911"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
+    <a href="https://www.facebook.com/ryanahmed911/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+  </p>
 </div>
 
 ---
@@ -40,9 +43,7 @@ I'm a **Computer Science undergraduate at BRAC University**, based in Dhaka, Ban
 ### 📊 GitHub in numbers
 
 <div align="center">
-
 <img src="https://raw.githubusercontent.com/RyanAhmed911/RyanAhmed911/output/streak.svg" alt="Streak stats" />
-
 </div>
 
 ---
