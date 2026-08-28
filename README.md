@@ -7,6 +7,7 @@
     <a href="https://github.com/RyanAhmed911?tab=followers"><img src="https://img.shields.io/github/followers/RyanAhmed911?label=Followers&style=flat-square&color=FF005D" alt="Followers" /></a>
   </p>
   <p>
+    <a href="https://ryan-ahmed-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
     <a href="https://linkedin.com/in/ryan-ahmed-749067201/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="mailto:ryanahmed9110@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
     <a href="https://www.youtube.com/@RyanAhmed911"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
